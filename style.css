@@ -1,0 +1,543 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+@font-face {
+    font-family: "OpenSans" ;
+    src: url(./fonts/OpenSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Raleway-Regular" ;
+    src: url(./fonts/Raleway-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Raleway-Bold" ;
+    src: url(./fonts/Raleway-Bold.ttf);
+}
+ul li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+input {
+    border: none;
+    outline: none;
+    border-radius: 3rem;
+    padding: 1.5rem 3rem;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+header {
+    background: #1B2330;
+    padding: 3.5rem 0 10rem 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.logo img {
+    height: 2.5rem;
+    margin-right: 1rem;
+}
+
+.navBar ul li {
+    display: inline-block;
+    margin-right: 3rem;
+}
+
+.navBar ul li a {
+    color: #fff;
+    font-family: "Raleway-Regular" ;
+    font-size: 1.6rem;
+}
+
+.navBar ul li a:hover {
+    border-bottom: 1px solid #fff;
+}
+
+.showcase {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 7.5rem;
+}
+
+.illu {
+    width: 50rem;
+}
+
+.illu img {
+    width: 100%;
+}
+
+.illuText {
+    text-align: center;
+}
+
+.illuText h1 {
+    font-size: 4rem;
+    line-height: 6rem;
+    font-weight: 700;
+    color: #fff;
+    font-family: "Raleway-Bold" ;
+    margin: 3rem 0;
+}
+
+.illuText p {
+    font-size: 2rem;
+    line-height: 3rem;
+    margin-bottom: 3rem;
+    color: #fff;
+    font-family: "OpenSans";
+}
+
+.illuText input {
+    background: linear-gradient(to bottom right, #63E1D9, #34A0CD);
+    width: 28rem;
+    color: #fff;
+    font-family: "Raleway-Bold";
+    cursor: pointer;
+}
+
+.illuText input:hover {
+    background: #8ADAE3;
+}
+
+section {
+    background: #181F2B;
+    padding: 5rem 0 13rem 0;
+}
+
+.insideContainer {
+    width: 60%;
+    margin: auto;
+}
+
+.col {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-bottom: 7rem;
+    align-items: center;
+}
+
+.row2 h4 {
+    font-size: 2rem;
+    line-height: 2.3rem;
+    color: #fff;
+    font-family: "Raleway-Bold";
+    font-weight: 700;
+    margin: 1.6rem 0.8rem;
+}
+
+.row2 p {
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+    font-weight: 400;
+    font-family: "OpenSans";
+    color: #fff;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.infoImg  {
+    min-width: 40rem;
+    flex-basis: 45%;
+}
+
+.infoImg img {
+    width: 100%;
+}
+
+.infoText {
+    flex-basis: 45%;
+}
+
+.infoText h1 {
+    font-size: 4rem;
+    line-height: 5rem;
+    font-weight: 700;
+    font-family: "Raleway-Bold";
+    text-align: left;
+    color: #fff;
+    margin-bottom: 2rem;
+}
+
+.infoText p {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: #fff;
+    font-family: "OpenSans";
+    margin-bottom: 1.6rem;
+}
+
+.infoText a {
+    color: #62E0D9;
+    font-size: 1.6rem;
+    font-family: "OpenSans";
+    border-bottom: 1px solid #62E0D9;
+    padding-bottom: .5rem;
+}
+
+.infoText a:hover {
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+
+.infoText a span {
+    color: #000;
+    margin-left: .5rem;
+    background: #62E0D9;
+    padding: .2rem .4rem .2rem .4rem;
+    border-radius: 50%;
+    font-size: 1rem;
+}
+
+.infoText a span:hover {
+    background: #fff;
+}
+
+.boxWrap {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+.qoute {
+    position: absolute;
+    left: 3.5rem;
+    top: -3.5rem;
+}
+
+.box {
+    width: 35rem;
+    background: #202A3C;
+    padding: 2.5rem;
+    border-radius: .5rem;
+    color: #ffff;
+    z-index: 1;
+}
+
+.box p {
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+    letter-spacing: .05rem;
+    font-family: "OpenSans";
+    margin-bottom: 2rem;
+}
+
+.user {
+    display: flex;
+    gap: 1rem;
+}
+
+.userInfo h4 {
+    font-size: 1rem;
+    letter-spacing: .05rem;
+    font-family: "OpenSans";
+    margin-bottom: .4rem;
+    font-weight: 700;
+}
+
+.userInfo small {
+    font-size: .7rem;
+    letter-spacing: .05rem;
+    font-family: "OpenSans";
+}
+
+section .subscribe {
+    position: relative;
+}
+
+.subBox {
+    background: #1B2330;
+    padding: 3rem 5rem;
+    text-align: center;
+    color: #fff;
+    border-radius: 1rem;
+    width: 86rem;
+    box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.25);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.subBox h1 {
+    font-size: 3.2rem;
+    line-height: 4.8rem;
+    font-weight: 700;
+    font-family: "Raleway-Bold";
+    margin-bottom: 1.6rem;
+}
+
+.subBox p {
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+    font-family: "OpenSans";
+    margin-bottom: 3.8rem;
+}
+
+.subBox .email {
+    background: #fff;
+    width: 45rem;
+    margin-right: 3rem;
+}
+
+.subBox .btn {
+    background: linear-gradient(to bottom right, #63E1D9, #34A0CD);
+    width: auto;
+    color: #fff;
+    font-family: "Raleway-Bold";
+    cursor: pointer;
+}
+
+.subBox .btn:hover {
+    background: #8ADAE3;
+}
+
+footer {
+    background: #0B1524;
+    padding-top: 16rem;
+    padding-bottom: 5rem;
+}
+
+.foot .logo {
+    margin-bottom: 5rem;
+} 
+
+.foot p, .foot a {
+    color: #ffff;
+    font-size: 1.6rem;
+    font-family: "OpenSans";
+}
+
+.foot a:hover {
+    font-weight: 700;
+}
+
+.footInfo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.address {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.6rem;
+}
+
+.tel, .email2 {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.tel {
+    margin-bottom: 1.6rem;
+}
+
+ul li {
+    margin-bottom: 1.6rem;
+}
+
+.social img {
+    margin-right: 1.2rem;
+    cursor: pointer;
+}
+
+/*----------------------Media Query for mobile-------------------*/
+
+@media screen and (max-width: 700px) {
+    .logo img {
+        height: 2rem;
+        margin-right: .5rem;
+    }
+    .navBar ul li a {
+        font-size: 1.2rem;
+    }
+    .navBar ul li {
+        margin-right: 2rem;
+    }
+    
+    .illu, .infoImg {
+        max-width: 23rem;
+    }
+    .infoImg {
+        flex-basis: 100%;
+    }
+    .illu img  {
+        width: 100%;
+    }
+
+    .infoImg img {
+        width: 100%;
+    }
+    .illuText h1 {
+        font-size: 2.4rem;
+        line-height: 3.6rem;
+    }
+    .illuText p {
+        font-size: 1.4rem;
+        line-height: 2.1rem;
+    }
+    .illuText input {
+        width: 20rem;
+    }
+    .col {
+        flex-direction: column;
+    }
+    .colm {
+        margin-bottom: 0;
+    }
+    .row2 {
+        margin-bottom: 8rem;
+    }
+    .insideContainer {
+        width: 90%;
+    }
+    .info {
+        flex-direction: column;
+        gap: 5rem;
+    }
+    .infoText h1 {
+        font-size: 1.8rem;
+        line-height: 2.4rem;
+    }
+    .infoText p, .infoText a {
+        font-size: 1.4rem;
+        line-height: 2.1rem;
+    }
+    .boxWrap {
+        flex-direction: column;
+        align-items: center;
+        gap: 2.4rem;
+    }
+    .box {
+        max-width: 30rem;
+        padding: 2rem;
+    }
+    .subBox  {
+        max-width: 27.5rem;
+        padding: 4rem 2.8rem;
+        left: 50%;
+    }
+    .subBox h1 {
+        font-size: 1.8rem;
+        line-height: 2.4rem;
+    }
+    .subBox p {
+        font-size: 1.4rem;
+        line-height: 2.1rem;
+    }
+    .subBox .email, .subBox .btn {
+        width: 100%;
+    }
+    .subBox .email {
+        margin-bottom: 1.5rem;
+    }
+    .subscribe {
+        height: 29rem;
+    }
+    .footInfo {
+        flex-direction: column;
+    }
+    .address {
+        margin-bottom: 3rem;
+    }
+    .contact, .link {
+        margin-bottom: 3rem;
+    }
+    .social {
+        align-self: center;
+    }
+}
+
+
+/*--------------Media Query Tablet-----------------*/
+
+@media screen and (max-width: 1180px) {
+    .insideContainer {
+        width: 90%;
+    }
+    .col {
+        justify-content: space-evenly;
+    }
+    .boxWrap {
+        flex-wrap: wrap;
+    }
+    .box {
+        margin-bottom: 2rem;
+    }
+    .footInfo{
+        flex-wrap: wrap;
+    }
+    
+   
+}
+
+@media screen and (max-width:900px) {
+    .info {
+        flex-direction: column;
+        gap: 5rem;
+    }
+    .subBox  {
+        max-width: 70.5rem;
+        padding: 4rem 1.8rem;
+    }
+    .subBox .email, .subBox .btn {
+        width: 100%;
+    }
+    .subBox .email {
+        margin-bottom: 1.5rem;
+    }
+    .subscribe {
+        height: 29rem;
+    } 
+}
+
+@media screen and (max-width:700px) {
+    .subBox  {
+        max-width: 27.5rem;
+        padding: 4rem 2.8rem;
+        left: 50%;
+    }
+    .subBox h1 {
+        font-size: 1.8rem;
+        line-height: 2.4rem;
+    }
+    .subBox p {
+        font-size: 1.4rem;
+        line-height: 2.1rem;
+    }
+    .subBox .email, .subBox .btn {
+        width: 100%;
+    }
+    .subBox .email {
+        margin-bottom: 1.5rem;
+    }
+    .subscribe {
+        height: 29rem;
+    }
+}

@@ -384,15 +384,12 @@ ul li {
     .illu, .infoImg {
         max-width: 23rem;
     }
-    .infoImg {
-        flex-basis: 100%;
-    }
     .illu img  {
         width: 100%;
     }
 
     .infoImg img {
-        width: 100%;
+        width: 80%;
     }
     .illuText h1 {
         font-size: 2.4rem;

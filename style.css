@@ -439,6 +439,7 @@ ul li {
     .infoText h1 {
         font-size: 1.8rem;
         line-height: 2.4rem;
+        margin-top: 3rem;
     }
     .infoText p, .infoText a {
         font-size: 1.4rem;

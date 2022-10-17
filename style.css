@@ -50,7 +50,6 @@ header {
 nav {
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
 
@@ -163,7 +162,7 @@ section {
     align-items: center;
 }
 .infoImg  {
-    min-width: 40rem;
+    width: 40rem;
     flex-basis: 45%;
 }
 
@@ -269,11 +268,12 @@ section {
 
 section .subscribe {
     position: relative;
+    height: 6rem;
 }
 
 .subBox {
     background: #1B2330;
-    padding: 3rem 5rem;
+    padding: 4rem;
     text-align: center;
     color: #fff;
     border-radius: 1rem;
@@ -299,10 +299,32 @@ section .subscribe {
     margin-bottom: 3.8rem;
 }
 
+.CTA {
+    position: relative;
+    /* padding-bottom: 3rem; */
+}
+
+.CTA span {
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+    font-family: "OpenSans";
+    color: red;
+    position: absolute;
+    top: 100%;
+    left: 6rem;
+    transition: top .5s;;
+}
+
+#subMsg {
+    color: rgb(9, 128, 9);
+    font-family: "Raleway-Bold";
+}
+
 .subBox .email {
     background: #fff;
     width: 45rem;
     margin-right: 3rem;
+    border: 1px solid #fff;
 }
 
 .subBox .btn {
@@ -382,14 +404,10 @@ ul li {
     }
     
     .illu, .infoImg {
-        max-width: 23rem;
+        max-width: 25rem;
     }
-    .illu img  {
+    .illu img, .infoImg img   {
         width: 100%;
-    }
-
-    .infoImg img {
-        width: 80%;
     }
     .illuText h1 {
         font-size: 2.4rem;

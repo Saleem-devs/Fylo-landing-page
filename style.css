@@ -453,6 +453,9 @@ ul li {
         max-width: 30rem;
         padding: 2rem;
     }
+    .user img {
+        margin-right: 1rem;
+    }
     .subBox  {
         max-width: 27.5rem;
         padding: 4rem 2.8rem;
